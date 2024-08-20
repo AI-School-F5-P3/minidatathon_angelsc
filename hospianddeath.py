@@ -81,9 +81,9 @@ hospitalizations_layout = create_map('hospitalized', 'Hospitalizaciones por COVI
 deaths_layout = create_map('deathConfirmed', 'Muertes por COVID-19')
 
 # Crear pestañas para cada mapa
-tab1 = Panel(child=cases_layout, title="Casos")
-tab2 = Panel(child=hospitalizations_layout, title="Hospitalizaciones")
-tab3 = Panel(child=deaths_layout, title="Muertes")
+tab1 = Panel(child=[cases_layout], title="Casos")
+tab2 = Panel(child=[hospitalizations_layout], title="Hospitalizaciones")
+tab3 = Panel(child=[deaths_layout], title="Muertes")
 
 tabs = Tabs(tabs=[tab1, tab2, tab3])
 
