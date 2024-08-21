@@ -87,5 +87,5 @@ layout = column(p, slider, date_display)
 
 # Mostrar el mapa
 curdoc().add_root(layout)
-# output_file("covid_us_map.html")
+output_file("covid_deadincrease_us_map.html")
 show(layout)
